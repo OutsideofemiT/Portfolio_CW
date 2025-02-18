@@ -1,12 +1,14 @@
+import React from 'react';
+
 const Footer = () => {
   return (
     <footer>
-      <p>
-        Connect with me on:
-        <a href="https://github.com/outsideofemit" target="_blank" rel="noopener noreferrer">GitHub</a>,
-        <a href="https://www.linkedin.com/in/carmendwheeler" target="_blank" rel="noopener noreferrer">LinkedIn</a>, and
-        <a href="https://instagram.com/outsideofemit" target="_blank" rel="noopener noreferrer">Instgram</a>
-      </p>
+      <p>© {new Date().getFullYear()} Developer's Name</p>
+      <div>
+        <li><a href="https://github.com/developer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/developer">LinkedIn</a></li>
+        <li><a href="https://stackoverflow.com/users/developer">Stack Overflow</a></li>
+      </div>
     </footer>
   );
 };

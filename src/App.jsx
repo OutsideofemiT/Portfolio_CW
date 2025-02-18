@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Portfolio from './pages/Portfolio';
+import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import AboutMe from './pages/AboutMe';
-import Projects from './components/Projects';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import './assets/styles/App.css';
@@ -12,18 +12,15 @@ import './assets/styles/App.css';
 const App = () => {
   return (
     <Router>
-      <div>
-        
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/resume" element={<Resume />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/resume" element={<Resume />} />
+      </Routes>
+      <Footer />
     </Router>
   );
 };
