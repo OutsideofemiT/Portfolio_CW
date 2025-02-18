@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Existing styles */
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li .active {
+  font-weight: bold;
+  color: blue;
+}
+
+/* Other styles */
