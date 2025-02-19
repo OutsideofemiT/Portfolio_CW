@@ -1,10 +1,11 @@
-/* Existing styles */
-
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Application styles */
@@ -12,48 +13,99 @@ body {
   font-family: Arial, sans-serif;
   background-color: #0A0A23; /* Dark Void */
   color: #F5F5F5; /* White Smoke */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-header, footer {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1B1F3B; /* Deep Space Blue */
+  color: #F5F5F5; /* White Smoke */
+  padding: 1em;
+  width: 100%;
+}
+
+header .name {
+  font-family: 'Brush Script MT', cursive;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem; /* Add space between nav items */
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #9A1F6A; /* Neon Purple */
+}
+
+header nav ul li a:hover {
+  color: #00FFFF; /* Electric Cyan */
+}
+
+footer {
   background-color: #1B1F3B; /* Deep Space Blue */
   color: #F5F5F5; /* White Smoke */
   padding: 1em;
   text-align: center;
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%;
 }
 
-nav ul {
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1rem;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav ul li {
+.footer-links li {
   display: inline;
-  margin-right: 1em;
 }
 
-nav ul li a {
+.footer-links li a {
   color: #9A1F6A; /* Neon Purple */
 }
 
-nav ul li a.active {
-  font-weight: bold;
+.footer-links li a:hover {
   color: #00FFFF; /* Electric Cyan */
 }
 
-.project img {
-  max-width: 100%;
+.footer-copyright {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 1rem;
 }
 
-/* Form styles */
-form {
+.main-content {
+  text-align: center;
+  padding: 2rem;
+  flex-grow: 1; /* Allow main content to grow and fill space */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-form div {
-  margin-bottom: 1em;
-}
-
-.error {
-  color: #FF6F3D; /* Accent Color (example) */
-}
