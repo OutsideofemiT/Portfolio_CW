@@ -259,3 +259,16 @@ button:focus-visible {
   align-items: center;
   width: 100%;
 }
+.Resume ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.signature {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: 700;
+  color: #fff; /* Adjust color based on your background */
+  text-align: center;
+}

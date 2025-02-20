@@ -109,3 +109,8 @@ footer {
   width: 100%;
 }
 
+.Resume ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
