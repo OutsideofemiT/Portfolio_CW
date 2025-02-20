@@ -1,10 +1,10 @@
-import React from 'react';
-import Navigation from './Navigation';
+import React from "react";
+import Navigation from "./Navigation";
 
 const Header = () => {
   return (
-    <header>
-      <h1>Carmen Wheeler</h1>
+    <header className="header-container">
+      <h1 className="signature">Carmen Wheeler</h1>
       <Navigation />
     </header>
   );
