@@ -146,14 +146,14 @@ a:hover {
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  min-width: 320px;
-  padding: 1em;
-  background-color: #1B1F3B; /* Deep Space Blue */
-  color: #F5F5F5; /* White Smoke */
+  justify-content: space-between;  /* Name on the left, nav on the right */
+  align-items: center;  /* Vertically align items */
   width: 100%;
+  padding: 3em 1em;  /* Adjust padding for better spacing */
+  background-color: #1B1F3B;
+  color: #F5F5F5;
 }
+
 
 footer {
   display: flex;
@@ -272,9 +272,20 @@ h1.signature {
   color: #fff !important;
   text-align: center !important;
 }
-.h1, h1 {
-  font-size: 3rem !important;
-  line-height: 1.1 !important;
-  color: #fff !important;
-  font-family: 'Dancing Script', cursive !important;
+/* Override Bootstrap global heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit !important;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10rem 0;
+}
+
+.welcome-text {
+  font-size: 3rem;  /* Keep size the same */
+  font-weight: bold;
+  color: #fff;
 }
