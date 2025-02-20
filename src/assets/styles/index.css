@@ -184,11 +184,26 @@ footer {
 }
 
 .footer-links li a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Space between icon and text */
   color: #9A1F6A; /* Neon Purple */
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer-links li a:hover {
   color: #00FFFF; /* Electric Cyan */
+}
+
+.footer-icon {
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-links li a:hover .footer-icon {
+  transform: scale(1.2); /* Slight zoom effect on hover */
 }
 
 .footer-copyright {
@@ -196,6 +211,7 @@ footer {
   color: #888;
   margin-top: 1rem;
 }
+
 
 h1 {
   font-size: 3.2em;
@@ -265,17 +281,17 @@ button:focus-visible {
   margin: 0 auto !important;
 }
 
-h1.signature {
-  font-family: 'Dancing Script', cursive !important;
-  font-size: 3rem !important;  /* Adjust as needed */
-  font-weight: 700 !important;
+.signature {
+  font-family: 'Great Vibes', cursive !important;
+  font-size: 3.5rem !important;
+  font-weight: 400 !important;
   color: #fff !important;
-  text-align: center !important;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
 }
-/* Override Bootstrap global heading styles */
-h1, h2, h3, h4, h5, h6 {
-  font-family: inherit !important;
-}
+
+
 .home-container {
   display: flex;
   flex-direction: column;
@@ -288,4 +304,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3rem;  /* Keep size the same */
   font-weight: bold;
   color: #fff;
+}
+.introduction-text {
+  font-size: 5px;
+  font-weight: lighter;
+  color: #fff;
+  text-align: justify
 }

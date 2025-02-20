@@ -1,13 +1,21 @@
-import React from 'react';
+import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Importing icons
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="footer-container">
       <div className="footer-content">
         <ul className="footer-links">
-          <li><a href="https://github.com/developer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/developer">LinkedIn</a></li>
-          <li><a href="https://stackoverflow.com/users/developer">Stack Overflow</a></li>
+          <li>
+            <a href="https://github.com/outsideofemit" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="footer-icon" /> GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/carmendwheeler" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="footer-icon" /> LinkedIn
+            </a>
+          </li>
         </ul>
       </div>
       <p className="footer-copyright">© {new Date().getFullYear()} Carmen Wheeler</p>
