@@ -33,7 +33,7 @@ header .name {
 }
 
 header nav {
-  margin-left: auto;
+  margin-right: auto;
 }
 
 header nav ul {
@@ -81,7 +81,7 @@ footer {
 }
 
 .footer-links li {
-  display: inline;
+  display: center;
 }
 
 .footer-links li a {
