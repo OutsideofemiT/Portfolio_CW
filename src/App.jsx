@@ -1,11 +1,11 @@
-import { Route, Routes } from 'react-router-dom';
-import Layout from './components/Layout'; // Use Layout to wrap pages
-import Home from './pages/Home';
-import AboutMe from './pages/AboutMe';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import Resume from './pages/Resume';
-import './styles/App.css'; // Corrected import
+import { Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./components/Home"; // Home is inside components
+import AboutMe from "./pages/AboutMe";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
+import Resume from "./pages/Resume";
+import "./assets/styles/App.css"; // Correct import path for App.css
 
 const App = () => {
   return (
