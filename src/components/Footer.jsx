@@ -5,6 +5,10 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
+        {/* Left Side: Copyright */}
+        <p className="footer-copyright">© {new Date().getFullYear()} Carmen Wheeler</p>
+
+        {/* Right Side: Social Links */}
         <ul className="footer-links">
           <li>
             <a href="https://github.com/outsideofemit" target="_blank" rel="noopener noreferrer">
@@ -18,8 +22,6 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-
-      <p className="footer-copyright">© {new Date().getFullYear()} Carmen Wheeler</p>
     </footer>
   );
 };

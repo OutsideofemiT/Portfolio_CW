@@ -9,7 +9,7 @@ const AboutMe = () => {
         <p>
           Hello! I'm Carmen Wheeler, a dedicated full-stack web developer in training, currently honing my skills at SMU University Software Development Bootcamp. My journey into web development has been fueled by a passion for creating dynamic and user-friendly applications. 
           
-          Through various class projects, I've gained hands-on experience with technologies such as **React, JavaScript, and Node.js**.
+          Through various class projects, I've gained hands-on experience with technologies such as React, JavaScript, and Node.js.
         </p>
 
         <p>
@@ -17,7 +17,7 @@ const AboutMe = () => {
         </p>
 
         <p>
-          In addition to web development, I have a passion for **digital AI art**. This creative outlet allows me to explore new ideas and bring a unique artistic perspective to my projects.
+          In addition to web development, I have a passion for digital/AI art. This creative outlet allows me to explore new ideas and bring a unique artistic perspective to my projects.
         </p>
 
         <p>Thank you for visiting my portfolio. I look forward to connecting and collaborating on exciting opportunities!</p>

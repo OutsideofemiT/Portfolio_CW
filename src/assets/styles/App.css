@@ -18,60 +18,81 @@ body {
   min-height: 100vh;
 }
 
+/* Ensure the header spans full width */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1B1F3B; /* Deep Space Blue */
-  color: #F5F5F5; /* White Smoke */
-  padding: 1em;
   width: 100%;
-}
-
-header .name {
-  font-family: 'Brush Script MT', cursive;
-}
-
-header nav {
-  margin-right: auto;
-}
-
-header nav ul {
-  list-style-type: none;
   display: flex;
-  gap: 2rem; /* Add space between nav items */
-  margin: 0;
-  padding: 0;
+  justify-content: space-between; /* Pushes name to the left & nav to the right */
+  align-items: center;
+  padding: 1.5rem 2rem; /* Adjust padding as needed */
+  background-color: #1B1F3B; /* Dark background */
+  color: #F5F5F5; /* White text */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
-header nav ul li {
+/* Style for the name/logo section */
+.header-name {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Navigation styles */
+nav {
+  margin-left: auto; /* Pushes nav to the right */
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem; /* Adds space between links */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
   display: inline;
 }
 
-header nav ul li a {
+nav ul li a {
+  text-decoration: none;
   color: #9A1F6A; /* Neon Purple */
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
 }
 
-header nav ul li a:hover {
+nav ul li a:hover {
   color: #00FFFF; /* Electric Cyan */
 }
 
-footer {
-  background-color: #1B1F3B; /* Deep Space Blue */
-  color: #F5F5F5; /* White Smoke */
-  padding: 1em;
-  text-align: center;
-  margin-top: auto; /* Push footer to the bottom */
-  width: 100%;
+
+/* Ensure the footer spans the full width */
+/* Ensure the footer spans the full width */
+.footer-container {
+  width: 100vw;  /* Ensures full width */
+  background-color: #1B1F3B; /* Same as header */
+  color: #F5F5F5;
+  padding: 1.5rem 2rem;
+  position: fixed; /* Keeps it at the bottom */
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
+/* Flexbox for spacing between copyright and links */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Aligns left and right */
   align-items: center;
-  width: 100%;
+  max-width: 1280px;  /* Keeps content centered */
+  margin: 0 auto;
 }
 
+/* Footer links styling */
 .footer-links {
   display: flex;
   gap: 1rem;
@@ -80,23 +101,32 @@ footer {
   margin: 0;
 }
 
-.footer-links li {
-  display: center;
+/* Footer icons */
+.footer-icon {
+  margin-right: 0.5rem;
+  color: #9A1F6A; /* Neon Purple */
 }
 
+/* Footer link styles */
 .footer-links li a {
-  color: #9A1F6A; /* Neon Purple */
+  color: #9A1F6A;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer-links li a:hover {
   color: #00FFFF; /* Electric Cyan */
 }
 
+/* Copyright styling */
 .footer-copyright {
   font-size: 0.9em;
   color: #888;
-  margin-top: 1rem;
 }
+
+
+
 
 .main-content {
   text-align: center;
@@ -113,4 +143,73 @@ footer {
   list-style: none !important;
   padding: 0 !important;
   margin: 0 auto !important;
+}
+/* Contact Form Container */
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 5rem auto; /* Centers form with spacing */
+  padding: 2rem;
+  background-color: #1B1F3B; /* Deep blue background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #F5F5F5;
+}
+
+/* Form Title */
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #00FFFF; /* Electric Cyan */
+}
+
+/* Input Fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #1B1F3B;
+}
+
+/* Focus Styles */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #00FFFF;
+}
+
+/* Submit Button */
+.contact-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #00FFFF;
+  color: #1B1F3B;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #9A1F6A; /* Neon Purple */
+  color: #F5F5F5;
+}
+.form-status {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #00ff00; /* Green for success */
+}
+
+.form-status.error {
+  color: #ff0000; /* Red for errors */
 }
