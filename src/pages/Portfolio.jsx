@@ -3,7 +3,7 @@ import Project from '../components/Projects';
 const projects = [
   {
     title: 'Employee Tracker',
-    image: './src/assets/images/Employee_Tracker.gif',
+    image: './src/assets/images/empTrack_10.mp4',
     repoLink: 'https://github.com/OutsideofemiT/empTrack_10.git',
   },
   {
@@ -14,7 +14,7 @@ const projects = [
   },
   {
   title: 'Vehicle Builder',
-  image: './src/assets/images/Vehicle_Builder.gif',
+  image: './src/assets/images/Vehicle_Builder.mp4',
   repoLink: 'https://github.com/OutsideofemiT/Vehicle-Builder.git',
 },
 
