@@ -67,8 +67,6 @@ const Resume = () => {
             <ul className="list-group bg-transparent">
               <li className="list-group-item bg-transparent border-0 text-white">Node.js</li>
               <li className="list-group-item bg-transparent border-0 text-white">Express.js</li>
-              <li className="list-group-item bg-transparent border-0 text-white">MySQL</li>
-              <li className="list-group-item bg-transparent border-0 text-white">PostgreSQL</li>
               <li className="list-group-item bg-transparent border-0 text-white">SQL</li>
               <li className="list-group-item bg-transparent border-0 text-white">Render</li>
             </ul>
