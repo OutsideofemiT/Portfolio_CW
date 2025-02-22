@@ -6,7 +6,7 @@ Welcome to my **Developer Portfolio**, a showcase of my projects, skills, and ex
 ![Portfolio Screenshot](./assets/images/ScrnshtPort.jpg)
 
 ## 🔗 Live Demo
-Check out my portfolio live: [**Portfolio Website**](https://your-live-portfolio-url.com)  
+Check out my portfolio live: [**Portfolio Website**](https://cwport.netlify.app/)  
 
 ---
 
