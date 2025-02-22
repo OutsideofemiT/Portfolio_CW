@@ -1,3 +1,4 @@
+
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home"; // Home is inside components
@@ -5,6 +6,7 @@ import AboutMe from "./pages/AboutMe";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
+
 import "./assets/styles/App.css"; // Correct CSS import
 
 function App() {

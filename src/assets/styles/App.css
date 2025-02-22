@@ -38,6 +38,7 @@ body {
   text-align: center;
 }
 
+<<<<<<< Updated upstream
 /* Ensure the header spans full width */
 header {
   width: 100%;
@@ -74,6 +75,50 @@ nav ul {
   margin: 0;
 }
 
+=======
+/* Fixed Header Styling */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background-color: #1B1F3B; /* Deep Space Blue */
+  color: #F5F5F5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Ensures body content is not hidden behind fixed header */
+#root {
+  padding-top: 80px; /* Adjust this based on header height */
+}
+
+/* Header name styling */
+.header-name {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: auto;
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Navigation styles */
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+>>>>>>> Stashed changes
 nav ul li {
   display: inline;
 }
@@ -89,6 +134,7 @@ nav ul li a:hover {
   color: #00FFFF; /* Electric Cyan */
 }
 
+<<<<<<< Updated upstream
 
 /* Ensure the footer spans the full width */
 /* Ensure the footer spans the full width */
@@ -104,6 +150,89 @@ nav ul li a:hover {
 }
 
 /* Flexbox for spacing between copyright and links */
+=======
+/* Ensures all pages have uniform styling */
+.page-container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 8rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Flexbox Layout */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.flex-item {
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1.5rem;
+  background-color: #1B1F3B;
+  color: #F5F5F5;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Page-specific styling */
+.about-me, .projects, .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+/* Contact form styles */
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1B1F3B;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #00FFFF;
+  color: #1B1F3B;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1B1F3B;
+  color: #F5F5F5;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  position: relative; /* Prevent overlap issues */
+}
+
+/* Footer content arrangement */
+>>>>>>> Stashed changes
 .footer-content {
   display: flex;
   justify-content: space-between; /* Aligns left and right */
@@ -112,7 +241,11 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
+<<<<<<< Updated upstream
 /* Footer links styling */
+=======
+/* Footer links */
+>>>>>>> Stashed changes
 .footer-links {
   display: flex;
   gap: 1rem;
@@ -121,6 +254,7 @@ nav ul li a:hover {
   margin: 0;
 }
 
+<<<<<<< Updated upstream
 /* Footer icons */
 .footer-icon {
   margin-right: 0.5rem;
@@ -128,6 +262,8 @@ nav ul li a:hover {
 }
 
 /* Footer link styles */
+=======
+>>>>>>> Stashed changes
 .footer-links li a {
   color: #9A1F6A;
   text-decoration: none;
@@ -144,6 +280,7 @@ nav ul li a:hover {
   font-size: 0.9em;
   color: #888;
 }
+<<<<<<< Updated upstream
 
 
 
@@ -281,3 +418,5 @@ nav ul li a:hover {
     font-size: smaller; /* Adjust heading sizes */
   }
 }
+=======
+>>>>>>> Stashed changes
