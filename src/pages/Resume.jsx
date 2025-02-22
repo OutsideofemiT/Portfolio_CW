@@ -18,8 +18,8 @@ const Resume = () => {
         transition={{ delay: 0.5, duration: 0.5 }}
       >
         <a 
-          href="./assets/resume/CW_Tech_Resume.pdf" 
-          download 
+          href="/assets/resume/CW_Tech_Resume.pdf"  // ✅ Corrected Path
+          download="Carmen_Wheeler_Resume.pdf"  // ✅ Forces a proper download
           className="btn btn-primary"
         >
           Download Resume
@@ -81,3 +81,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
