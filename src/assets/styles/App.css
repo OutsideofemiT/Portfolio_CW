@@ -1,3 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 /* Ensure consistency across all pages */
 * {
   box-sizing: border-box;
@@ -42,11 +44,11 @@ body {
 header {
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Pushes name to the left & nav to the right */
+  justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem; /* Adjust padding as needed */
-  background-color: #1B1F3B; /* Dark background */
-  color: #F5F5F5; /* White text */
+  padding: 1.5rem 2rem;
+  background-color: #1B1F3B;
+  color: #F5F5F5;
   position: fixed;
   top: 0;
   left: 0;
@@ -63,12 +65,12 @@ header {
 
 /* Navigation styles */
 nav {
-  margin-left: auto; /* Pushes nav to the right */
+  margin-left: auto;
 }
 
 nav ul {
   display: flex;
-  gap: 2rem; /* Adds space between links */
+  gap: 2rem;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -89,26 +91,24 @@ nav ul li a:hover {
   color: #00FFFF; /* Electric Cyan */
 }
 
-
-/* Ensure the footer spans the full width */
 /* Ensure the footer spans the full width */
 .footer-container {
-  width: 100vw;  /* Ensures full width */
-  background-color: #1B1F3B; /* Same as header */
+  width: 100vw;
+  background-color: #1B1F3B;
   color: #F5F5F5;
   padding: 1.5rem 2rem;
-  position: fixed; /* Keeps it at the bottom */
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
 }
 
-/* Flexbox for spacing between copyright and links */
+/* Footer content */
 .footer-content {
   display: flex;
-  justify-content: space-between; /* Aligns left and right */
+  justify-content: space-between;
   align-items: center;
-  max-width: 1280px;  /* Keeps content centered */
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -121,12 +121,6 @@ nav ul li a:hover {
   margin: 0;
 }
 
-/* Footer icons */
-.footer-icon {
-  margin-right: 0.5rem;
-  color: #9A1F6A; /* Neon Purple */
-}
-
 /* Footer link styles */
 .footer-links li a {
   color: #9A1F6A;
@@ -136,7 +130,7 @@ nav ul li a:hover {
 }
 
 .footer-links li a:hover {
-  color: #00FFFF; /* Electric Cyan */
+  color: #00FFFF;
 }
 
 /* Copyright styling */
@@ -145,49 +139,22 @@ nav ul li a:hover {
   color: #888;
 }
 
-
-
-
-.main-content {
-  text-align: center;
-  padding: 2rem;
-  flex-grow: 1; /* Allow main content to grow and fill space */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.Resume ul {
-  list-style: none !important;
-  padding: 0 !important;
-  margin: 0 auto !important;
-}
-/* Contact Form Container */
+/* Contact Form */
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   max-width: 600px;
-  margin: 5rem auto; /* Centers form with spacing */
+  margin: 5rem auto;
   padding: 2rem;
-  background-color: #1B1F3B; /* Deep blue background */
+  background-color: #1B1F3B;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   color: #F5F5F5;
 }
 
-/* Form Title */
-.contact-container h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-  color: #00FFFF; /* Electric Cyan */
-}
-
-/* Input Fields */
+/* Form Inputs */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -220,53 +187,79 @@ nav ul li a:hover {
 }
 
 .contact-form button:hover {
-  background-color: #9A1F6A; /* Neon Purple */
+  background-color: #9A1F6A;
   color: #F5F5F5;
 }
-.form-status {
-  text-align: center;
-  font-weight: bold;
+
+/* Project Links */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   margin-top: 10px;
-  color: #00ff00; /* Green for success */
 }
 
-.form-status.error {
-  color: #ff0000; /* Red for errors */
-}
-.project-links {
+/* Portfolio Projects - Align in a Row */
+.projects {
   display: flex;
-  gap: 15px; /* Adds space between links */
-  margin-top: 10px; /* Optional: Adds spacing between the links and the title */
+  flex-wrap: wrap; /* Allows wrapping if screen is too small */
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-.project-links {
-  display: flex;
-  justify-content: center;  /* Centers links horizontally */
-  gap: 20px;  /* Adds space between the links */
-  margin-top: 10px;  /* Adds space above the links */
-}
-/* Default styles (for larger screens) */
-.container {
-  width: 80%;
-  margin: auto;
+
+/* Individual Project Cards */
+.project {
+  flex: 1 1 300px;
+  max-width: 400px;
   text-align: center;
+  background-color: #1B1F3B;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: #F5F5F5;
 }
 
-/* Mobile screens (max-width: 768px) */
+/* Make Images & Videos Responsive */
+.project img, 
+.project video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Adjust Text & Links */
+.project h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0;
+}
+
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive Design for Smaller Screens */
 @media screen and (max-width: 768px) {
-  .container {
-    width: 95%;  /* Make it more flexible on smaller screens */
-    font-size: 14px;  /* Reduce font size for better readability */
+  .projects {
+    flex-direction: column; /* Stack items only on small screens */
+    align-items: center;
   }
-  
-  .project img, .project video {
-    width: 100%; /* Make images/videos fully responsive */
-    height: auto;
+
+  .project {
+    width: 90%;
   }
 
   .project-links {
-    display: flex;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 10px;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h1, h2, h3 {
+    font-size: smaller;
   }
 }
 
@@ -277,7 +270,11 @@ nav ul li a:hover {
     padding: 10px;
   }
 
-  h1, h2, h3 {
-    font-size: smaller; /* Adjust heading sizes */
+  .proficiency-row {
+    font-size: 1rem;
+  }
+
+  .gold-text {
+    font-size: 1.1rem;
   }
 }
