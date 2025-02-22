@@ -3,10 +3,12 @@
 Welcome to my **Developer Portfolio**, a showcase of my projects, skills, and experience as a web developer. This site highlights my work in **front-end and back-end development**, with a focus on **React, Node.js, Express, PostgreSQL, and more**. 🚀
 
 ## 📸 Preview
-![Portfolio Screenshot](./public/assets/images/ScrnshtPort.jpg)
+
+![ScrnshtPort](https://github.com/user-attachments/assets/86667e7a-ca1d-4b31-8c9b-38579fdeddc6)
+
 
 ## 🔗 Live Demo
-Check out my portfolio live: [**Portfolio Website**](https://your-live-portfolio-url.com)  
+Check out my portfolio live: [**Portfolio Website**](https://cwport.netlify.app/))  
 
 ---
 
