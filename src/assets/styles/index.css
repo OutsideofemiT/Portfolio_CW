@@ -13,19 +13,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-<<<<<<< Updated upstream
   background-color: #0A0A23; /* Dark Background */
   color: #F5F5F5; /* White Text */
 }
 
 /* Ensure Root Container is Centered */
-=======
-  background-color: #0A0A23;
-  color: #F5F5F5;
-  align-items: center;
-}
-
->>>>>>> Stashed changes
 #root {
   flex: 1;
   display: flex;
@@ -48,7 +40,6 @@ body {
   padding: 6rem 2rem;
   text-align: center;
 }
-<<<<<<< Updated upstream
 /* Default styles (for larger screens) */
 .container {
   width: 80%;
@@ -85,162 +76,4 @@ body {
   h1, h2, h3 {
     font-size: smaller; /* Adjust heading sizes */
   }
-=======
-
-/* Header and Footer Adjustments */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 1.5rem 2rem;
-  background-color: #1B1F3B;
-  color: #F5F5F5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-.header-name {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-right: auto;
-  font-family: 'Dancing Script', cursive;
-}
-
-nav {
-  margin-left: auto;
-}
-
-nav ul {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #9A1F6A;
-  font-size: 1.2rem;
-  transition: color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-  color: #00FFFF;
-}
-
-/* Ensure all pages match About Me styling */
-.page-container {
-  max-width: 1280px;
-  width: 90%;
-  margin: 8rem auto 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Improve Flexbox Consistency */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  width: 100%;
-  max-width: 1280px;
-}
-
-.flex-item {
-  flex: 1 1 300px;
-  max-width: 400px;
-  padding: 1.5rem;
-  background-color: #1B1F3B;
-  color: #F5F5F5;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Make sure all pages match the About Me page */
-.about-me, .projects, .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 6rem 2rem;
-}
-
-/* Fix Contact Page */
-.contact-form {
-  width: 100%;
-  max-width: 600px;
-  background-color: #1B1F3B;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: left;
-}
-
-.contact-form input, .contact-form textarea {
-  width: 100%;
-  padding: 0.8rem;
-  margin-top: 0.5rem;
-  border: none;
-  border-radius: 4px;
-}
-
-.contact-form button {
-  width: 100%;
-  margin-top: 1rem;
-  background-color: #00FFFF;
-  color: #1B1F3B;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-footer {
-  background-color: #1B1F3B;
-  color: #F5F5F5;
-  padding: 1.5rem 2rem;
-  text-align: center;
-  margin-top: auto;
-  width: 100%;
-  position: static;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.footer-links {
-  display: flex;
-  gap: 1rem;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li a {
-  color: #9A1F6A;
-}
-
-.footer-links li a:hover {
-  color: #00FFFF;
-}
-
-.footer-copyright {
-  font-size: 0.9em;
-  color: #888;
-  margin-top: 1rem;
->>>>>>> Stashed changes
 }
