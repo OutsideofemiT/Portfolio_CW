@@ -8,7 +8,7 @@ Welcome to my **Developer Portfolio**, a showcase of my projects, skills, and ex
 
 
 ## 🔗 Live Demo
-Check out my portfolio live: [**Portfolio Website**](https://cwport.netlify.app/))  
+Check out my portfolio live: [**Portfolio Website**](https://cwport.netlify.app/)  
 
 ---
 
