@@ -63,7 +63,7 @@ body {
 
 /* Adjust Heading Sizes */
 h1 {
-  font-size: clamp(1.8rem, 4vw, 2.5rem); /* Scales between 1.8rem and 2.5rem */
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: bold;
   text-align: center;
 }
@@ -71,7 +71,7 @@ h1 {
 h2 {
   font-size: clamp(1.5rem, 3vw, 2rem);
   text-align: center;
-  white-space: nowrap; /* Prevents breaking */
+  white-space: nowrap;
 }
 
 h3 {
@@ -84,15 +84,6 @@ h4 {
   text-align: center;
 }
 
-/* Paragraphs & List Items */
-p, li {
-  font-size: 1rem; /* Smaller text */
-  line-height: 1.6;
-  word-spacing: 1px;
-  letter-spacing: 0.5px;
-}
-
-/* Proficiencies Section (Now in Row Format) */
 /* Proficiency Section */
 .proficiencies {
   text-align: center;
@@ -107,6 +98,7 @@ p, li {
   margin-bottom: 1rem;
   text-align: center;
   white-space: normal; /* Allow wrapping if needed */
+  color: #FFD700; /* Gold text for better visibility */
 }
 
 .proficiency-row strong {
@@ -121,7 +113,32 @@ p, li {
 
 /* Mobile screens (max-width: 768px) */
 @media screen and (max-width: 768px) {
+  .resume-container {
+    height: auto; /* Allow scrolling */
+  }
+
+  .proficiencies {
+    width: 100%;
+    padding: 1rem;
+  }
+
   .proficiency-row {
     font-size: 1rem; /* Reduce text for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 0.9rem; /* Reduce text */
   }
 }
