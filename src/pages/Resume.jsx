@@ -37,12 +37,14 @@ const Resume = () => {
 
         {/* Front End Skills */}
         <p className="proficiency-row">
-          <strong className="text-primary">Front End:</strong> JavaScript, TypeScript, HTML5, CSS3, ReactJS, Netlify
+          <strong className="text-primary">Front End:</strong> 
+          <span className="gold-text"> JavaScript, TypeScript, HTML5, CSS3, ReactJS, Netlify</span>
         </p>
 
         {/* Back End Skills */}
         <p className="proficiency-row">
-          <strong className="text-success">Back End:</strong> Node.js, Express.js, SQL, Render
+          <strong className="text-success">Back End:</strong> 
+          <span className="gold-text"> Node.js, Express.js, SQL, Render</span>
         </p>
       </motion.div>
     </motion.section>
@@ -50,3 +52,4 @@ const Resume = () => {
 };
 
 export default Resume;
+
