@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const Resume = () => {
   return (
     <motion.section 
-      className="container mt-5"
-      initial={{ opacity: 0, y: 50 }} // Starts off-screen
-      animate={{ opacity: 1, y: 0 }} // Slides up and fades in
+      className="container mt-5 resume-container"
+      initial={{ opacity: 0, y: 50 }} 
+      animate={{ opacity: 1, y: 0 }} 
       transition={{ duration: 0.8 }}
     >
       <h2 className="text-center mb-4">Resume</h2>
@@ -18,8 +18,8 @@ const Resume = () => {
         transition={{ delay: 0.5, duration: 0.5 }}
       >
         <a 
-          href="/assets/resume/CW_Tech_Resume.pdf"  // ✅ Corrected Path
-          download="Carmen_Wheeler_Resume.pdf"  // ✅ Forces a proper download
+          href="/resume/CW_Tech_Resume.pdf"  
+          download="Carmen_Wheeler_Resume.pdf"  
           className="btn btn-primary"
         >
           Download Resume
@@ -28,51 +28,24 @@ const Resume = () => {
 
       {/* Proficiencies Section */}
       <motion.div 
-        className="card shadow p-4 bg-transparent border-0"
+        className="card shadow p-4 bg-transparent border-0 proficiencies"
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.7, duration: 0.6 }}
       >
         <h3 className="text-center text-white">Proficiencies</h3>
 
-        {/* Grid Layout for Front-End & Back-End Skills */}
-        <div className="row mt-3">
-          
-          {/* Front End Skills */}
-          <motion.div 
-            className="col-md-6"
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.6 }}
-          >
-            <h4 className="text-primary">Front End</h4>
-            <ul className="list-group bg-transparent">
-              <li className="list-group-item bg-transparent border-0 text-white">JavaScript</li>
-              <li className="list-group-item bg-transparent border-0 text-white">TypeScript</li>
-              <li className="list-group-item bg-transparent border-0 text-white">HTML5</li>
-              <li className="list-group-item bg-transparent border-0 text-white">CSS3</li>
-              <li className="list-group-item bg-transparent border-0 text-white">ReactJS</li>
-              <li className="list-group-item bg-transparent border-0 text-white">Netlify</li>
-            </ul>
-          </motion.div>
+        {/* Front End Skills */}
+        <p className="proficiency-row">
+          <strong className="text-primary">Front End:</strong> 
+          <span className="gold-text"> JavaScript, TypeScript, HTML5, CSS3, ReactJS, Netlify</span>
+        </p>
 
-          {/* Back End Skills */}
-          <motion.div 
-            className="col-md-6"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1.2, duration: 0.6 }}
-          >
-            <h4 className="text-success">Back End</h4>
-            <ul className="list-group bg-transparent">
-              <li className="list-group-item bg-transparent border-0 text-white">Node.js</li>
-              <li className="list-group-item bg-transparent border-0 text-white">Express.js</li>
-              <li className="list-group-item bg-transparent border-0 text-white">SQL</li>
-              <li className="list-group-item bg-transparent border-0 text-white">Render</li>
-            </ul>
-          </motion.div>
-
-        </div>
+        {/* Back End Skills */}
+        <p className="proficiency-row">
+          <strong className="text-success">Back End:</strong> 
+          <span className="gold-text"> Node.js, Express.js, SQL, Render</span>
+        </p>
       </motion.div>
     </motion.section>
   );
