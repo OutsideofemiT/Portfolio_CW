@@ -213,3 +213,14 @@ nav ul li a:hover {
 .form-status.error {
   color: #ff0000; /* Red for errors */
 }
+.project-links {
+  display: flex;
+  gap: 15px; /* Adds space between links */
+  margin-top: 10px; /* Optional: Adds spacing between the links and the title */
+}
+.project-links {
+  display: flex;
+  justify-content: center;  /* Centers links horizontally */
+  gap: 20px;  /* Adds space between the links */
+  margin-top: 10px;  /* Adds space above the links */
+}
