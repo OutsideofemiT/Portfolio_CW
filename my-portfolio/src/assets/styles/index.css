@@ -1,0 +1,144 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-page Layout Consistency */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #0A0A23; /* Dark Background */
+  color: #F5F5F5; /* White Text */
+  font-size: 14px; /* Reduce base size */
+}
+
+/* Ensure Root Container is Centered */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Main Content (All Pages) */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 2rem; /* Reduce padding */
+  text-align: center;
+}
+
+/* Default styles (for larger screens) */
+.container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Fix Resume Page Layout */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Keep page within viewport */
+  overflow: hidden;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Adjust Heading Sizes */
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  text-align: center;
+  white-space: nowrap;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  text-align: center;
+}
+
+h4 {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  text-align: center;
+}
+
+/* Proficiency Section */
+.proficiencies {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  max-width: 800px;
+}
+
+.proficiency-row {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  text-align: center;
+  white-space: normal; /* Allow wrapping if needed */
+  color: #FFD700; /* Gold text for better visibility */
+}
+
+.proficiency-row strong {
+  font-weight: bold;
+  color: #00FFFF; /* Light blue for "Front End" & "Back End" */
+}
+
+.gold-text {
+  color: #FFD700; /* Gold text for better visibility */
+  font-weight: bold;
+}
+
+/* Mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .resume-container {
+    height: auto; /* Allow scrolling */
+  }
+
+  .proficiencies {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .proficiency-row {
+    font-size: 1rem; /* Reduce text for smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 0.9rem; /* Reduce text */
+  }
+}
