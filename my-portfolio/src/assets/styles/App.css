@@ -13,8 +13,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #0A0A23;
-  color: #F5F5F5;
+  background-color: #0A0A23; /* Dark Void */
+  color: #F5F5F5; /* White Smoke */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
@@ -84,13 +84,13 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #9A1F6A;
+  color: #9A1F6A; /* Neon Purple */
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #00FFFF;
+  color: #00FFFF; /* Electric Cyan */
 }
 
 /* Ensure the footer spans the full width */
@@ -99,17 +99,19 @@ nav ul li a:hover {
   background-color: #1B1F3B;
   color: #F5F5F5;
   padding: 1.5rem 2rem;
-  position: relative;
+  position: relative; /* Change from fixed to relative */
   bottom: 0;
+  text-align: center;
 }
 
 /* Footer content */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* Footer links styling */
@@ -119,6 +121,8 @@ nav ul li a:hover {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Footer link styles */
@@ -131,57 +135,15 @@ nav ul li a:hover {
   color: #00FFFF;
 }
 
-/* Contact Form */
-.contact-container {
+/* Project Links */
+.project-links {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  max-width: 600px;
-  margin: 5rem auto;
-  padding: 2rem;
-  background-color: #1B1F3B;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  gap: 15px;
+  margin-top: 10px;
 }
 
-/* Form Inputs */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 1rem;
-  margin: 0.5rem 0;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-/* Focus Styles */
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: 2px solid #00FFFF;
-}
-
-/* Submit Button */
-.contact-form button {
-  width: 100%;
-  padding: 1rem;
-  background-color: #00FFFF;
-  color: #1B1F3B;
-  font-size: 1.2rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #9A1F6A;
-  color: #F5F5F5;
-}
-
-/* Portfolio Projects */
+/* Portfolio Projects - Align in a Row */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -200,6 +162,7 @@ nav ul li a:hover {
   background-color: #1B1F3B;
   padding: 1.5rem;
   border-radius: 8px;
+  color: #F5F5F5;
 }
 
 /* Make Images & Videos Responsive */
@@ -258,6 +221,23 @@ nav ul li a:hover {
     width: 90%;
   }
 
+  /* Improve footer layout */
+  .footer-container {
+    padding: 1rem;
+    position: relative; /* Ensures it doesn't overlap content */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
   /* Improve contact form */
   .contact-container {
     width: 95%;
@@ -314,5 +294,15 @@ nav ul li a:hover {
 
   p, li {
     font-size: 1rem;
+  }
+
+  /* Adjust footer */
+  .footer-content {
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
   }
 }
