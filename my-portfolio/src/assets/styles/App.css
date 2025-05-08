@@ -1,23 +1,23 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* Ensure consistency across all pages */
+/* Global Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Set a full-page layout */
+/* Full-page Layout Consistency */
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   font-family: Arial, sans-serif;
-  background-color: #0A0A23; /* Dark Void */
-  color: #F5F5F5; /* White Smoke */
+  background-color: #0A0A23;
+  color: #F5F5F5;
+  font-size: 14px;
 }
 
-/* Ensure the root element fills the viewport */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -28,7 +28,6 @@ body {
   min-height: 100vh;
 }
 
-/* Main content should take up the remaining space */
 .main-content {
   flex-grow: 1;
   display: flex;
@@ -36,11 +35,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 6rem 2rem; /* Adjust padding for spacing */
+  padding: 6rem 2rem;
   text-align: center;
 }
 
-/* Ensure the header spans full width */
 header {
   width: 100%;
   display: flex;
@@ -56,14 +54,12 @@ header {
   z-index: 1000;
 }
 
-/* Style for the name/logo section */
 .header-name {
   font-size: 2rem;
   font-weight: bold;
   font-family: 'Dancing Script', cursive;
 }
 
-/* Navigation styles */
 nav {
   margin-left: auto;
 }
@@ -72,26 +68,19 @@ nav ul {
   display: flex;
   gap: 2rem;
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #9A1F6A; /* Neon Purple */
+  color: #9A1F6A;
   font-size: 1.2rem;
   transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #00FFFF; /* Electric Cyan */
+  color: #00FFFF;
 }
 
-/* Ensure the footer spans the full width */
 .footer-container {
   width: 100vw;
   background-color: #1B1F3B;
@@ -103,7 +92,6 @@ nav ul li a:hover {
   right: 0;
 }
 
-/* Footer content */
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -112,16 +100,12 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-/* Footer links styling */
 .footer-links {
   display: flex;
   gap: 1rem;
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
-/* Footer link styles */
 .footer-links li a {
   color: #9A1F6A;
   text-decoration: none;
@@ -133,13 +117,11 @@ nav ul li a:hover {
   color: #00FFFF;
 }
 
-/* Copyright styling */
 .footer-copyright {
   font-size: 0.9em;
   color: #888;
 }
 
-/* Contact Form */
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -154,7 +136,6 @@ nav ul li a:hover {
   color: #F5F5F5;
 }
 
-/* Form Inputs */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -166,13 +147,11 @@ nav ul li a:hover {
   color: #1B1F3B;
 }
 
-/* Focus Styles */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: 2px solid #00FFFF;
 }
 
-/* Submit Button */
 .contact-form button {
   width: 100%;
   padding: 0.8rem;
@@ -191,7 +170,6 @@ nav ul li a:hover {
   color: #F5F5F5;
 }
 
-/* Project Links */
 .project-links {
   display: flex;
   justify-content: center;
@@ -199,10 +177,9 @@ nav ul li a:hover {
   margin-top: 10px;
 }
 
-/* Portfolio Projects - Align in a Row */
 .projects {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping if screen is too small */
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   padding: 2rem;
@@ -210,7 +187,6 @@ nav ul li a:hover {
   margin: 0 auto;
 }
 
-/* Individual Project Cards */
 .project {
   flex: 1 1 300px;
   max-width: 400px;
@@ -221,60 +197,101 @@ nav ul li a:hover {
   color: #F5F5F5;
 }
 
-/* Make Images & Videos Responsive */
-.project img, 
+.project img,
 .project video {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Adjust Text & Links */
 .project h3 {
   font-size: 1.4rem;
   margin: 1rem 0;
 }
 
-.project-links {
+.about-section {
+  max-width: 900px;
+  margin: 6rem auto 4rem;
+  padding: 2rem;
+  background-color: #1B1F3B;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(154, 31, 106, 0.4);
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  color: #F5F5F5;
+  text-align: center;
 }
 
-/* Responsive Design for Smaller Screens */
-@media screen and (max-width: 768px) {
-  .projects {
-    flex-direction: column; /* Stack items only on small screens */
-    align-items: center;
+.about-section img.profile-image {
+  width: 160px;
+  height: auto;
+  object-fit: contain;
+  border: 3px solid #9A1F6A;
+  box-shadow: 0 0 12px #9A1F6A;
+  margin-bottom: 1.5rem;
+  border-radius: 12px; /* optional: slight rounding */
+}
+
+
+.about-section .introduction p {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;  /* smaller than 1.1rem */
+  line-height: 1.7;
+  text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+  .about-section {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
   }
 
-  .project {
-    width: 90%;
+  .about-section img.profile-image {
+    margin-right: 2rem;
+    margin-bottom: 0;
   }
 
-  .project-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  h1, h2, h3 {
-    font-size: smaller;
+  .about-section .introduction {
+    flex: 1;
   }
 }
 
-/* Extra small screens (max-width: 480px) */
-@media screen and (max-width: 480px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
+.proficiencies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  text-align: left;
+  width: 100%;
+  max-width: 1100px;
+}
 
-  .proficiency-row {
-    font-size: 1rem;
-  }
+.proficiency-card {
+  background-color: #1B1F3B;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(154, 31, 106, 0.3);
+  color: #F5F5F5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .gold-text {
-    font-size: 1.1rem;
-  }
+.proficiency-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(154, 31, 106, 0.5);
+}
+
+.proficiency-card h3 {
+  color: #9A1F6A;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.proficiency-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0;
 }
