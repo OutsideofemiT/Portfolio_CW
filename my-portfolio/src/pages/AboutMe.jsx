@@ -3,7 +3,6 @@ import cdwImage from "../assets/images/cdw.jpg";
 const AboutMe = () => {
   return (
     <section>
-      <h2>About Me</h2>
       <img src={cdwImage} alt="Developer Avatar" className="profile-image" />
       <div className="introduction">
         <p>
