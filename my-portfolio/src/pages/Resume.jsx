@@ -47,7 +47,7 @@ const Resume = () => {
           <p>
             Git & GitHub, GitHub Actions (CI/CD), Cypress,<br />
             OpenAI API, Postman, VS Code, Agile/Scrum,<br />
-            Responsive Design, a11y, DevTools
+            Responsive Design, DevTools
           </p>
         </div>
       </div>
