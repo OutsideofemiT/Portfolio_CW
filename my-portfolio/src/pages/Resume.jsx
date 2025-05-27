@@ -15,7 +15,7 @@ const Resume = () => {
           Download Resume
         </a>
         <a
-          href="/assets/resume/CW_Tech_525.pdf"
+          href="/assets/resume/Carmen_Wheeler_Resume_511.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="view-btn"
