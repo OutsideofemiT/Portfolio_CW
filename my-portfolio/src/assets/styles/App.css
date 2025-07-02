@@ -144,7 +144,7 @@ nav ul li a:hover {
   border: none;
   border-radius: 5px;
   font-size: 1rem;
-  color: #1B1F3B;
+  color: whitesmoke;
 }
 
 .contact-form input:focus,
