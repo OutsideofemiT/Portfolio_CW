@@ -5,18 +5,13 @@ const AboutMe = () => {
     <section className="about-section">
       <img src={cdwImage} alt="Developer Avatar" className="profile-image" />
       <div className="introduction">
-        <p>
-          Hello! I'm Carmen Wheeler, a dedicated full-stack web developer in training, currently honing my skills at SMU University Software Development Bootcamp. My journey into web development has been fueled by a passion for creating dynamic and user-friendly applications. Through various class projects, I've gained hands-on experience with technologies such as React, JavaScript, and Node.js.
-        </p>
-        <p>
-          Before diving into the world of coding, I built a solid foundation in customer service management. This experience has equipped me with essential soft skills like communication, problem-solving, and teamwork, which I seamlessly integrate into my development process. I believe that a great developer not only understands technology but also empathizes with users' needs and expectations.
-        </p>
-        <p>
-          In addition to web development, I have a passion for digital/AI art. This creative outlet allows me to explore new ideas and bring a unique artistic perspective to my projects.
-        </p>
-        <p>
-          Thank you for visiting my portfolio. I look forward to connecting and collaborating on exciting opportunities!
-        </p>
+      <p>Hi, I’m Carmen Wheeler—a full-stack web developer with a passion for blending creativity, structure, and strategy into digital experiences that connect. I work across the stack with equal enthusiasm, building thoughtful user interfaces, scalable backends, and intentional systems that support both users and teams.</p>
+
+     <p>My background in customer service management sharpened my instincts for empathy, clarity, and collaborative problem-solving—skills I now channel into every piece of code, every brand touchpoint, and every client interaction.</p>
+
+     <p>I’m also a strong believer in the power of good design and better workflows. Whether I’m crafting digital/AI art, fine-tuning performance, or developing branding systems that tell stories, I bring a unique mix of logic, intuition, and a deep respect for meaningful work.</p>
+
+     <p>Let’s build something intentional, impactful, and a little bit bold.</p>
       </div>
     </section>
   );
