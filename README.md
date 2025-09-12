@@ -1,3 +1,5 @@
+# This portfolio is currently being updated to reflect recent projects and direction. Thanks for your patience—new work is landing soon.
+
 # 🌟 My Developer Portfolio - Carmen Wheeler
 
 Welcome to my **Developer Portfolio**, a showcase of my projects, skills, and experience as a web developer. This site highlights my work in **front-end and back-end development**, with a focus on **React, Node.js, Express, PostgreSQL, and more**. 🚀
